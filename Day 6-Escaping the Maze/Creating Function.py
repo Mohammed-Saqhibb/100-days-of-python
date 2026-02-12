@@ -11,7 +11,7 @@ def my_function():
 my_function()
 
 
-#HARVEST 3 SOLUTION
+#Hurdle 4 SOLUTION
 def turn_right():
     turn_left() 
     turn_left() 
