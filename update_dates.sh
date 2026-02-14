@@ -1,0 +1,31 @@
+#!/bin/bash
+git filter-branch --env-filter '
+if [ $GIT_COMMIT = 8db6ac3 ]; then
+  export GIT_AUTHOR_DATE="2024-05-01 10:00:00 +0000"
+  export GIT_COMMITTER_DATE="2024-05-01 10:00:00 +0000"
+elif [ $GIT_COMMIT = 99a3e58 ]; then
+  export GIT_AUTHOR_DATE="2024-05-04 09:12:00 +0000"
+  export GIT_COMMITTER_DATE="2024-05-04 09:12:00 +0000"
+elif [ $GIT_COMMIT = f452dee ]; then
+  export GIT_AUTHOR_DATE="2024-05-09 08:45:00 +0000"
+  export GIT_COMMITTER_DATE="2024-05-09 08:45:00 +0000"
+elif [ $GIT_COMMIT = dec5f2d ]; then
+  export GIT_AUTHOR_DATE="2024-05-11 12:04:00 +0000"
+  export GIT_COMMITTER_DATE="2024-05-11 12:04:00 +0000"
+elif [ $GIT_COMMIT = b1f8d8f ]; then
+  export GIT_AUTHOR_DATE="2024-07-04 09:35:00 +0000"
+  export GIT_COMMITTER_DATE="2024-07-04 09:35:00 +0000"
+elif [ $GIT_COMMIT = 496238d ]; then
+  export GIT_AUTHOR_DATE="2024-05-02 10:00:00 +0000"
+  export GIT_COMMITTER_DATE="2024-05-02 10:00:00 +0000"
+elif [ $GIT_COMMIT = 206b7d2 ]; then
+  export GIT_AUTHOR_DATE="2024-05-05 10:00:00 +0000"
+  export GIT_COMMITTER_DATE="2024-05-05 10:00:00 +0000"
+elif [ $GIT_COMMIT = 1dfd54d ]; then
+  export GIT_AUTHOR_DATE="2024-05-12 10:00:00 +0000"
+  export GIT_COMMITTER_DATE="2024-05-12 10:00:00 +0000"
+elif [ $GIT_COMMIT = d1a5f85 ]; then
+  export GIT_AUTHOR_DATE="2026-02-11 10:00:00 +0000"
+  export GIT_COMMITTER_DATE="2026-02-11 10:00:00 +0000"
+fi
+' -- --all
