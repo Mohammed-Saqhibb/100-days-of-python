@@ -2,3 +2,4 @@
 2) https://en.wikipedia.org/wiki/Hangman_(game)
 3) https://hangmanwordgame.com/?fca=1&success=0#/
 4) https://developers.google.com/edu/python/lists#for-and-in
+5) https://developers.google.com/edu/python/lists#range
